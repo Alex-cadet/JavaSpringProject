@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Билет</title>
+</head>
+<style>
+    body{
+        background: url(/images/айс4.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;  
+        }
+</style>
+<body>
+    <div style="border:solid; border-style:ridge; width: fit-content; margin-left: 40%; padding: 20px;">
+        <h1 th:text="'Билет №: ' + ${ticket.id}" />
+        <h3 th:text="'Фильм: ' + ${ticket.film}" />
+        <h3 th:text="'Место: ' + ${ticket.seat}" />
+        <h3 th:text="'Ряд: ' + ${ticket.row}" />
+        <h3 th:text="'Зал: ' + ${ticket.hall}" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <button style="background-color: chartreuse;margin-left: 40%;"><a th:href="@{/cinema}"/a>Назад</button>
+</body>
+</html>
