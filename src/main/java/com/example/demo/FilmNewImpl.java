@@ -6,7 +6,6 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.stereotype.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.FilmNew;
 
 @Repository
 public class FilmNewImpl implements FilmNewDAO {
