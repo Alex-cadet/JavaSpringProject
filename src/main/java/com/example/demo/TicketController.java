@@ -4,11 +4,22 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 import javax.validation.Valid;
 import org.springframework.validation.BindingResult;
 
 @Controller
 public class TicketController {
+
+    @GetMapping("/")
+    public String home() {
+        return "cinema";
+    } 
+    
+    @GetMapping("/listFilms")
+    public String listFilms() {
+        return "listFilms";
+    } 
 
     @RequestMapping(value="/cinema", method=RequestMethod.GET)
     public String greetingForm(Model model) {
