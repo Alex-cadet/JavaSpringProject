@@ -1,8 +1,8 @@
 -- insert into t_FilmNew (id, title, genre,duration,country,yearMade)
 delete from t_FilmNew;
-insert into t_FilmNew (id, title, genre) values ('swdd','Ôîğğåñò Ãàìï','Ïğèêëş÷åíèÿ');
-insert into t_FilmNew (id, title, genre) values ('îòóâ','Âåäüìàê','Ôıíòåçè');
-insert into t_FilmNew (id, title, genre) values ('sdcv','Ëîêè','Ïğèêëş÷åíèÿ');
-insert into t_FilmNew (id, title, genre) values ('myta','Äæîêåğ','Òğèëëåğ');
-insert into t_FilmNew (id, title, genre) values ('12cr','×åëîâåê-ïàóê: Âäàëè îò äîìà','Ôàíòàñòèêà');
-insert into t_FilmNew (id, title, genre) values ('xdg8','Áîãåìñêàÿ ğàïñîäèÿ','Äğàìà');
+-- insert into t_FilmNew (id, title, genre) values ('swdd','˜˜˜˜˜˜˜ ˜˜˜˜','˜˜˜˜˜˜˜˜˜˜˜');
+-- insert into t_FilmNew (id, title, genre) values ('˜˜˜˜','˜˜˜˜˜˜˜','˜˜˜˜˜˜˜');
+-- insert into t_FilmNew (id, title, genre) values ('sdcv','˜˜˜˜','˜˜˜˜˜˜˜˜˜˜˜');
+-- insert into t_FilmNew (id, title, genre) values ('myta','˜˜˜˜˜˜','˜˜˜˜˜˜˜');
+-- insert into t_FilmNew (id, title, genre) values ('12cr','˜˜˜˜˜˜˜-˜˜˜˜: ˜˜˜˜˜ ˜˜ ˜˜˜˜','˜˜˜˜˜˜˜˜˜˜');
+-- insert into t_FilmNew (id, title, genre) values ('xdg8','˜˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜˜','˜˜˜˜˜');

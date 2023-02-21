@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Айсберг</title>
+  </head>
+  
+  <body>
+    <h1>Вход в "Айсберг"</h1>
+    
+    <div th:if="${error}"> 
+      Неправильные данне
+    </div>
+    
+    <p>Новый пользователь? Перейдите 
+       <a th:href="@{/register}">сюда</a> для регистрации.</p>
+    
+    <form method="POST" th:action="@{/login}" id="loginForm">
+      <label for="username">Логин: </label>
+      <input type="text" name="username"/><br/>
+      
+      <label for="password">Пароль: </label>
+      <input type="password" name="password"/><br/>
+      
+      <input type="submit" value="Login"/>
+    </form>
+  </body>
+</html>

@@ -16,6 +16,11 @@ public class TicketController {
         return "cinema";
     } 
     
+    @GetMapping("/register")
+    public String register() {
+        return "register";
+    } 
+
     @GetMapping("/listFilms")
     public String listFilms() {
         return "listFilms";

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Айсберг</title>
+  </head>
+  
+  <body>
+    <h1>Регистрация в кинотеатре "Айсберг"</h1>
+    <img th:src="@{/images/TacoCloud.png}"/>    
+    
+    <form method="POST" th:action="@{/register}" id="registerForm">
+    
+        <label for="username">Логин: </label>
+        <input type="text" name="username"/><br/>
+
+        <label for="password">Пароль: </label>
+        <input type="password" name="password"/><br/>
+        <label for="confirm">Подтвердите пароль: </label>
+        <input type="password" name="confirm"/><br/>    
+        <input type="submit" value="Зарегистрировать"/>
+    </form>
+    
+  </body>
+</html>
