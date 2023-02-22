@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание</title>
+</head>
+<body>
+    <h1>Внести</h1>
+    <form  th:action="@{/allShedule}" th:object="${ticket}" method="post">
+        <label>Фильм-</label><input type="text"></label>
+        <label>Время-</label><input type="text">
+        <label>Формат-</label><input type="text">
+        <label>Цена-</label><input type="text">
+        <br>
+        <br>
+        <input type="button" value="Добавить">
+        <input type="reset" value="Удалить">
+    </form>
+</body>
+</html>

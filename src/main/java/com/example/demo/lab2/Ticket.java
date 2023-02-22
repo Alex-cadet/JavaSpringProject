@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.lab2;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

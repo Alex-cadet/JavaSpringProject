@@ -22,10 +22,10 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd"
 	</properties>
 	<dependencies>
 <!-- Data -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-cassandra</artifactId>
-		</dependency> -->
+		</dependency>
 
 		<!-- <dependency>
     		<groupId>org.springframework.boot</groupId>
