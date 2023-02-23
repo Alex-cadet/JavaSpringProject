@@ -8,5 +8,9 @@
 </head>
 <body>
     <h1>Список</h1>
+        <h3 th:text="'Фильм: ' + ${shedule.movie}" />
+        <h3 th:text="'Время: ' + ${shedule.startShaw}" />
+        <h3 th:text="'Формат: ' + ${shedule.format}" />
+        <h3 th:text="'Цена: ' + ${shedule.minPrice}" />
 </body>
 </html>
