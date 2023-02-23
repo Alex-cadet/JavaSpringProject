@@ -4,7 +4,9 @@ import com.example.demo.CassandraModel.Shedule;
 import com.example.demo.CassandraModel.SheduleForm;
 import com.example.demo.CassandraModel.SheduleToSheduleForm;
 import com.example.demo.Service.SheduleService;
-import jakarta.validation.Valid;
+
+import org.springframework.web.bind.annotation.ModelAttribute;
+// import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -32,14 +34,14 @@ public class SheduleController {
     }
     
     @RequestMapping(value = "/sheduleAdd", method = RequestMethod.POST)
-    public String saveOrUpdateProduct(@Valid SheduleForm sheduleForm, BindingResult bindingResult){
+    public String saveOrUpdateProduct(SheduleForm sheduleForm, BindingResult bindingResult){
 
         if(bindingResult.hasErrors()){
-            return "/sheduleAdd";
+            return "sheduleAdd";
         }
 
         Shedule savedShedule = sheduleService.saveOrUpdateSheduleForm(sheduleForm);
 
-        return "/allShedule" + savedShedule.getId();
+        return "allShedule" + savedShedule.getId();
     }
 }

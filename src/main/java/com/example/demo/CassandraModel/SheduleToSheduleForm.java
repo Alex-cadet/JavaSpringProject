@@ -12,6 +12,7 @@ public class SheduleToSheduleForm implements Converter<Shedule, SheduleForm>{
         sheduleForm.setMovie(shedule.getMovie());
         sheduleForm.setMinPrice(shedule.getMinPrice());
         sheduleForm.setFormat(shedule.getFormat());
+        sheduleForm.setStartShaw(shedule.getStartShaw());
         return sheduleForm;
     }
 }

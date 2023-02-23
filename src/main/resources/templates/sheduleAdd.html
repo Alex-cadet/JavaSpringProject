@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
 </head>
 <body>
     <h1>Внести</h1>
-    <form  th:action="@{/sheduleAdd}" th:object="${shedule}" method="post">
+    <form  th:action="@{/sheduleAdd}" th:object="${sheduleForm}" method="post">
         <label>Фильм-</label><input type="text" th:field="*{movie}"></label>
         <label>Время-</label><input type="text" th:field="*{startShaw}">
         <label>Формат-</label><input type="text" th:field="*{format}">
