@@ -9,8 +9,9 @@
 </head>
 <body>
     <h1>Внести</h1>
-    <form  th:action="@{/sheduleAdd}" th:object="${sheduleForm}" method="post">
-        <label>Фильм-</label><input type="text" th:field="*{movie}"></label>
+    <form action="#"  th:action="@{/FormShedule}" th:object="${sheduleForm}" method="post">
+        <input type="hidden" th:field="*{id}"/>
+        <label>Фильм-</label><input type="text" th:field="*{movie}">
         <label>Время-</label><input type="text" th:field="*{startShaw}">
         <label>Формат-</label><input type="text" th:field="*{format}">
         <label>Цена-</label><input type="text" th:field="*{minPrice}">

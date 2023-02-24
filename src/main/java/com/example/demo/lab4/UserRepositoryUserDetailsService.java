@@ -1,3 +1,4 @@
+package com.example.demo.lab4;
 // package com.example.demo.lab4;
 
 // import org.springframework.security.core.userdetails.UserDetails;

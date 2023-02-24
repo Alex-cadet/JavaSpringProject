@@ -1,4 +1,4 @@
-package com.example.demo.CassandraModel;
+package com.example.demo.lab5.CassandraModel;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

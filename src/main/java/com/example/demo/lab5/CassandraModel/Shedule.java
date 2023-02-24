@@ -1,4 +1,4 @@
-package com.example.demo.CassandraModel;
+package com.example.demo.lab5.CassandraModel;
 
 import java.util.Date;
 import java.util.UUID;

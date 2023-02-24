@@ -1,10 +1,11 @@
-package com.example.demo.Service;
+package com.example.demo.lab5.Service;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.CassandraModel.SheduleForm;
-import com.example.demo.CassandraModel.SeduleFormToShedule;
-import com.example.demo.ShedRepository;
-import com.example.demo.CassandraModel.Shedule;
+import com.example.demo.lab5.ShedRepository;
+import com.example.demo.lab5.CassandraModel.SeduleFormToShedule;
+import com.example.demo.lab5.CassandraModel.Shedule;
+import com.example.demo.lab5.CassandraModel.SheduleForm;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

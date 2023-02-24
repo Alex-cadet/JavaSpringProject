@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Список</h1>
+        <h3 th:text="'sheduleForm: ' + Id${sheduleForm.id}">sheduleForm Id</h3>
         <h3 th:text="'Фильм: ' + ${sheduleForm.movie}" />
         <h3 th:text="'Время: ' + ${sheduleForm.startShaw}" />
         <h3 th:text="'Формат: ' + ${sheduleForm.format}" />
