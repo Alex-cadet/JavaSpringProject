@@ -16,7 +16,8 @@ import lombok.Data;
 @Data
 public class Shedule {
 
-    private UUID id = Uuids.timeBased();
+    // private UUID id = Uuids.timeBased();
+    Long id;
     private String movie;
     private String format;
     
@@ -26,6 +27,14 @@ public class Shedule {
 
     @PrimaryKeyColumn(type = PrimaryKeyType.PARTITIONED)
     private Date createdAt = new Date();
+
+    public  Shedule(Long id, String movie, String format, String startShaw, int minPrice){
+        this.id = id;
+        this.movie = movie;
+        this.format = format;
+        this.startShaw = startShaw;
+        this.minPrice = minPrice;
+    }
 
 
     

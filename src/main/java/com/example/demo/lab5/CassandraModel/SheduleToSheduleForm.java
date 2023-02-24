@@ -8,7 +8,7 @@ public class SheduleToSheduleForm implements Converter<Shedule, SheduleForm>{
     @Override
     public SheduleForm convert(Shedule shedule) {
         SheduleForm sheduleForm = new SheduleForm();
-        sheduleForm.setId(shedule.getId());
+        // sheduleForm.setId(shedule.getId());
         sheduleForm.setMovie(shedule.getMovie());
         sheduleForm.setMinPrice(shedule.getMinPrice());
         sheduleForm.setFormat(shedule.getFormat());

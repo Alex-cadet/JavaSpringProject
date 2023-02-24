@@ -6,6 +6,6 @@ import com.example.demo.lab5.CassandraModel.Shedule;
 
 import java.util.UUID;
 
-public interface ShedRepository extends CrudRepository<Shedule,UUID> {
+public interface ShedRepository extends CrudRepository<Shedule,Long> {
     
 }
